@@ -1,4 +1,4 @@
-Assignment_2.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     let currentPage = window.location.pathname.split("/").pop(); // Current file name
     let pageNumber = parseInt(currentPage.match(/\d+/)); // Extract page number
     
