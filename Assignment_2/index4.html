@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <svg width="120" height="60" viewBox="0 0 120 60">
+                    <rect width="120" height="60" rx="20" fill="black"></rect>
+                    <text x="15" y="40" font-family="Arial" font-size="35" font-weight="bold" fill="white">Skill</text>
+                </svg>
+            </div>
+            <h1>User Dashboard</h1>
+            <button class="menu-btn">menu</button>
+        </header>
+
+        <main>
+            <div class="welcome-box">
+                <h2>Welcome [user-name]</h2>
+            </div>
+
+            <p class="skill-guide">
+                🚀 <strong>Click here for Skill Guide</strong> <span class="arrow">Next</span>
+            </p>
+            
+            <p class="progress">
+                📍 <strong>Your progress :</strong> [ x ]
+            </p>
+
+            <!-- Updated button with onclick event -->
+            <button class="detail-btn" onclick="addDetails()">tap here for add your detail</button>
+            <button onclick="nextpage()">Next</button>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        function nextpage() {
+            window.location.href = "index6.html";
+        }
+    </script>
+    
+    <script>
+        function addDetails() {
+            alert("Redirecting to details form...");
+            window.location.href = "index5.html"; // Change this to your actual form page
+        }
+    </script>
+</body>
+</html>
